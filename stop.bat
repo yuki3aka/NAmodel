@@ -1,17 +1,8 @@
 @echo off
 echo [INFO] uvicorn プロセスを停止します...
 
-if not exist uvicorn.pid (
-    echo [WARN] uvicorn.pid ファイルがありません。手動で停止してください。
-    pause
-    exit /b
-)
-
-set /p PID=<uvicorn.pid
-
-taskkill /PID %PID% /F
-
-del uvicorn.pid
+REM PowerShellを使ってuvicornを含むPythonプロセスを強制終了
+powershell -Command "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'uvicorn' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }"
 
 echo [DONE] uvicorn を停止しました。
 pause

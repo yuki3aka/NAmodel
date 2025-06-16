@@ -1,0 +1,7 @@
+INFO:     Started server process [20584]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57934 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /chart.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57934 - "GET /static/style.css HTTP/1.1" 304 Not Modified
