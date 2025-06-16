@@ -4,62 +4,19 @@
   <meta charset="UTF-8" />
   <title>自動取引分析シミュレーション</title>
   <link rel="stylesheet" href="/static/style.css" />
-  <style>
-    body {
-      background-color: #e0e0e0;
-      margin: 0;
-      font-family: sans-serif;
-      position: relative;
-    }
-    .header {
-      width: 100%;
-      background-color: #ffffff;
-      padding: 15px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      font-size: 24px;
-      color: #333333;
-      user-select: none;
-      box-sizing: border-box;
-    }
-
-    #chart-container {
-      position: absolute;
-      top: 80px; /* 60px → 80pxに上げて帯とかぶらないように */
-      left: 20px;
-      width: auto; /* 約2倍に拡大 */
-      height: auto;
-      background: white;
-      border: 1px solid #ccc;
-      padding: 8px;              /* 画像周囲に余白を入れる */
-      box-shadow: 0 0 4px rgba(0,0,0,0.2);
-      user-select: none;
-      z-index: 100;
-      display: inline-block;
-    }
-
-    #chart-container img {
-      max-height: 200px; /* 2倍に */
-      width: auto;
-      display: block;
-    }
-
-    .content {
-      margin-top: 200px; /* ヘッダー＋チャートの高さ分余裕を確保 */
-      padding: 20px;
-    }
-  </style>
 </head>
 <body>
   <div class="header">
-    自動取引分析シミュレーション
-  </div>
-
-  <div id="chart-container">
-    <img src="/chart.png" alt="最新30分 1分足チャート" />
+    <h1>自動取引分析シミュレーション</h1>
   </div>
 
   <div class="content">
-    <!-- 他のUI要素 -->
+    <div class="chart-container">
+      <div class="chart-title">▶1分足チャート (BTC-USD)</div>
+      <img id="chart" src="/chart.png" alt="チャート" />
+    </div>
   </div>
+
+  <script src="/static/script.js"></script>
 </body>
 </html>

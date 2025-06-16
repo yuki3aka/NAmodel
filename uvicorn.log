@@ -1,7 +1,50 @@
-INFO:     Started server process [20584]
+INFO:     Started server process [21460]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     127.0.0.1:57934 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:57935 - "GET /chart.png HTTP/1.1" 200 OK
-INFO:     127.0.0.1:57934 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54610 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54611 - "GET /chart.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54610 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54612 - "GET /static/script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107780489 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107781486 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107782480 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54610 - "GET /chart.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54611 - "GET /static/script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54611 - "GET /chart.png?ts=1750107782904 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107783905 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107784912 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107785903 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107786910 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107787913 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107788906 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107789916 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107790912 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107791916 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107792287 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107792907 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107793905 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107794915 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107795904 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107796911 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107797904 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107798912 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107799903 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107800909 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107801905 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107802903 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107803908 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107804904 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107805908 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107806912 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107807905 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107808912 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107809906 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107810918 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107811902 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107812903 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107813164 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54612 - "GET /chart.png?ts=1750107813824 HTTP/1.1" 200 OK
