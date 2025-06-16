@@ -1,10 +1,17 @@
 @echo off
-echo [INFO] uvicorn を含むプロセスを検索して終了します...
+echo [INFO] uvicorn プロセスを停止します...
 
-for /f "tokens=2 delims=," %%a in ('tasklist /v /fo csv ^| findstr /i "uvicorn"') do (
-    echo [INFO] プロセス ID: %%a を終了します...
-    taskkill /PID %%a /F
+if not exist uvicorn.pid (
+    echo [WARN] uvicorn.pid ファイルがありません。手動で停止してください。
+    pause
+    exit /b
 )
 
-echo [DONE] uvicorn プロセス停止完了。
+set /p PID=<uvicorn.pid
+
+taskkill /PID %PID% /F
+
+del uvicorn.pid
+
+echo [DONE] uvicorn を停止しました。
 pause
